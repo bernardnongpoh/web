@@ -176,13 +176,13 @@ Drupal introduced a Form API in Drupal 6 which allowed alteration of the form da
 
 The vulnerability was found in the forms. The user registration form which requires no authentication and can be accessed anonymously contains multiple input fields and can be exploited.
 
-![Form Fields](https://github.com/hexcellents/sss-web/blob/master/07-framework-api-vulnerabilities/support/drupal1.png)
+![Form Fields](../07-framework-api-vulnerabilities/support/drupal1.png)
 
 It was highly probable that injecting a renderable array would exploit the vulnerability, the question was where?
 
 As it turns out, the “Email Address” field doesn’t sanitize the type of input it receives which allows hackers to inject the renderable array to the form array structure. Renderable arrays contain metadata that is used in the rendering process.
 
-![Injected Array](https://github.com/hexcellents/sss-web/blob/master/07-framework-api-vulnerabilities/support/drupal2.png)
+![Injected Array](../07-framework-api-vulnerabilities/support/drupal2.png)
 
 Since Drupal treats the injected array as a value and not as an element, attackers need to trick Drupal into rendering it. Drupal renders an array on page load events or via Drupal AJAX API.
 
