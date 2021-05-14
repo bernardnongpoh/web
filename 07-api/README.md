@@ -116,7 +116,7 @@ Imagine that a video-sharing platform was hit by a "large-scale" credential stuf
 Web application framework is a collection of pieces of software designed to ease the development of web applications. Web application frameworks provide common solutions for a wide variety of tasks such as database access, input filtering for security purposes, authentication, session handling and templates for website development.
 
 There are several different types of web application frameworks:
-* General purpose website frameworks (Ruby On Rails)
+* General purpose website frameworks (Ruby On Rails, ExpressJS, Django, Flask)
 * Discussion forums, wikis and weblogs (WikiBase/WikiWikiWeb)
 * Organizational portals (JBoss Portal)
 * Content Management Systems (CMS) (Joomla, Drupal, Wordpress)
